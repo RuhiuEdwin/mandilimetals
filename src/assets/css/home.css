@@ -1,0 +1,314 @@
+.hero{
+    background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),  url(../images/field.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hero-img{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.main-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 20px;
+}
+.one, .two{
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+.one{
+    color: var(--white);
+    background: var(--gold);
+}
+.two{
+    border: 2px solid var(--gold);
+    color: var(--gold);
+}
+.one:hover{
+    border:2px solid var(--white);
+    background: transparent;
+}
+.two:hover{
+    background: var(--gold);
+    color: var(--white);
+}
+.testimonials,
+.services,
+.contact,
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.about{
+    padding: 50px 0;
+    background: linear-gradient(to right, rgba(5, 0, 48, .9), rgba(5, 0, 48, .9)),  url(../images/graphic1.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    color: var(--white);
+}
+.services{ 
+    padding: 50px 0;
+    background: var(--offwhite);
+}
+.sub-title{
+    font-weight: lighter;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.about-wrapper{
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+.go-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 10px;
+    background: var(--gold);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+}
+.go-wrapper:hover{
+    box-shadow: 3px 3px 10px #ccc;
+}
+.go{
+    font-size: 2rem;
+}
+.services .go-wrapper{
+    margin-top: 50px;
+}
+.contact-info a{
+    color: var(--white);
+}
+.service-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding: 0 20px 40px 20px;
+    box-shadow: 3px 3px 10px #ccc;
+    text-align: center;
+    background: var(--black);
+    color: var(--white);
+}
+.service-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: var(--gold);
+    margin-bottom: 50px;
+}
+.service-icon{
+    color: var(--black);
+    font-size: 3rem;
+}
+.service-title{
+    font-weight: bold;
+    colr:var(--gold);
+    font-size: 1.2rem;
+}
+.service-description{
+    font-weight: 300;
+}
+.contact-info,
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.testimonial-info{
+    color: var(--white);
+    font-weight: lighter;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1rem;
+}
+.testimonials-wrapper{
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.testimonial-details{
+    padding: 20px 20px 40px 20px;
+    background: linear-gradient(to right, rgba(5,10,48, .95), rgba(5,10,48, .95)),  url(../images/graphic.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    width: 300px;
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: lighter;
+    font-size: .9rem;
+    position: relative;
+}
+.testimonial-details::after{
+    content: "";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: solid 25px transparent;
+    border-left: solid 25px transparent;
+    border-top: solid 25px var(--black);
+}
+.testimonial-img{
+    margin-top: 50px;
+    width: 80px;
+}
+.contact{
+    background: linear-gradient(to right, rgba(246,190,0, .95), rgba(246,190,0, .95)),  url(../images/graphic1.png);
+    color: var(--black);
+    padding: 50px;
+}
+.location,
+.address,
+.mail,
+.call{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+.contact-icon{
+    font-size: 2rem;
+    color: var(--black);
+}
+.contact-info a{
+    color: var(--black);
+}
+.contact-info{
+    color: var(--black);
+    padding: 50px;
+}
+.contact-form{
+    background: var(--black);
+    color: var(--white);
+    padding: 50px 0;
+    width: 100vw;
+    align-items: center;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+label input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--gold);
+    width: 90vw;
+    padding: 10px;
+}
+.submit{
+    width: 90vw;
+    padding: 10px;
+    background: var(--gold);
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit:hover{
+    box-shadow: 3px 3px 10px #ccc;
+}
+@media only screen and (min-width: 600px) {
+    .contact-wrapper,
+    .names{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .button{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .contact-wrapper{
+        gap: 50px;
+    }
+    .contact-form{
+        width: 80%;
+        padding: 50px 20px;
+    }
+    label input{
+        width: 100%;
+    }
+    #message{
+        width: 200%;
+    }
+    .submit{
+        width: 70%;
+    }
+    .service-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+    }
+    .testimonial-details{
+        padding: 50px;
+        width: 500px;
+    }
+    .service{
+        width: 400px;
+    }
+}
