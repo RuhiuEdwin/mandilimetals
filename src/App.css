@@ -10,7 +10,7 @@
   font-family: 'montserrat';
 }
 :root {
-  --white: #BFD7ED;
+  --white: #f4f4f4;
   --black: #050A30;
   --main: #4CB5F5;
   --blackish: #000;
@@ -86,19 +86,21 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 .footer p{
   text-align: center;
-  background: var(--white);
+  /* background: var(--white); */
   color: var(--white);
   font-weight: lighter;
   font-size: .7rem;
-  width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
 }
 .footer-wrapper{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 30px 0;
   gap: 20px;

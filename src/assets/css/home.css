@@ -123,19 +123,34 @@
     gap:10px;
     padding: 0 20px 40px 20px;
     box-shadow: 3px 3px 10px #ccc;
+    border-radius: 5px;
     text-align: center;
-    background: var(--black);
+    border-color: var(--black);
+    color: var(--black);
+}
+.about-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px 40px 20px;
+    box-shadow: 3px 3px 10px #ccc;
+    border-radius: 5px;
+    text-align: center;
+    border-color: var(--white);
     color: var(--white);
+
 }
 .service-header{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100px;
-    height: 150px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    height: 100px;
+    border-radius: 100%;
     background: var(--gold);
     margin-bottom: 50px;
 }
@@ -145,7 +160,7 @@
 }
 .service-title{
     font-weight: bold;
-    colr:var(--gold);
+    color:var(--gold);
     font-size: 1.2rem;
 }
 .service-description{
@@ -272,6 +287,26 @@ label input{
 .submit:hover{
     box-shadow: 3px 3px 10px #ccc;
 }
+.bar{
+    width: 100vw;
+    padding: 5px;
+    background: var(--gold);
+    display: flex;
+}
+.bar-wrapper{
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+    margin-left: auto;
+    color: var(--black);
+}
+.bar-wrapper a {
+    color: var(--black);
+}
+.bar-icon{
+    font-size: 1rem;
+    color: var(--black);
+}
 @media only screen and (min-width: 600px) {
     .contact-wrapper,
     .names{
@@ -308,7 +343,7 @@ label input{
         padding: 50px;
         width: 500px;
     }
-    .service{
-        width: 400px;
+    .service, .about-card{
+        width: 450px;
     }
 }
